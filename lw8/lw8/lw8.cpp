@@ -81,7 +81,7 @@ int main(int argc, char* argv[])
 
 			if (processingMode == "pool")
 			{
-				Pool pool(tasks, blockCount);
+				Pool pool(tasks, threadCountInPool);
 				pool.Execute();
 			}
 			else if (processingMode == "thread")
